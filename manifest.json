@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Calendar Notifier",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Notifies you of upcoming Google Calendar events.",
   "action": {
     "default_popup": "popup.html",
