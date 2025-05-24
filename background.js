@@ -23,8 +23,6 @@ async function checkCalendarEvents() {
       if (diffMinutes > 0 && diffMinutes <= 30 && already_exist == false) {
         chrome.storage.local.set({ [event.id]:  ''});
         createAlarm(event.summary, 'Event is starting now', eventStart);
-        const tenMinutesBefore = eventStart - (10 * 60 * 1000);
-        createAlarm(event.summary, 'Event is starting in 10 minutes', tenMinutesBefore);
       };
     });
   } catch (error) {
